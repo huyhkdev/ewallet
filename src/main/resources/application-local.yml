@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/wallet
+    username: wallet
+    password: wallet
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    org.springframework.transaction.interceptor: TRACE
+    org.springframework.orm.jpa.JpaTransactionManager: DEBUG
