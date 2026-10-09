@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: wallet
+  profiles:
+    default: local          # chạy trên máy thì mặc định dùng local; production phải set SPRING_PROFILES_ACTIVE
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false     # tắt OSIV: lý do sẽ học ở phần JPA (lazy loading)
+    hibernate:
+      ddl-auto: update      # TẠM THỜI cho bài ngày 1; EW-006 đổi sang Flyway + validate
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
