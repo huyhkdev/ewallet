@@ -1,6 +1,6 @@
 # Wallet — a digital wallet & payments platform
 
-A production-style digital wallet built with Java 21 and Spring Boot 3. Users top up with a card (Stripe, test mode), send money to each other, and see a full statement. Every money movement is recorded in an immutable **double-entry ledger**.
+A production-style digital wallet built with Java 21 and Spring Boot 4. Users top up with a card (Stripe, test mode), send money to each other, and see a full statement. Every money movement is recorded in an immutable **double-entry ledger**.
 
 > Status: Phase 1 (foundation). See [backlog/phase-1.md](backlog/phase-1.md).
 
@@ -23,7 +23,7 @@ This repository is run like a real fintech product team: a PRD, architecture dec
 
 | Area | Choice | Phase |
 |---|---|---|
-| Language / framework | Java 21, Spring Boot 3, Spring Data JPA (Hibernate) | 1 |
+| Language / framework | Java 21, Spring Boot 4, Spring Data JPA (Hibernate 7) | 1 |
 | Database | PostgreSQL 16, Flyway migrations | 1 |
 | API | REST, OpenAPI 3, RFC 9457 Problem Details | 2 |
 | Testing | JUnit 5, AssertJ, Mockito, Testcontainers, ArchUnit | 2 |
